@@ -39,7 +39,7 @@
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4.0.2",
     "eslint-plugin-standard": "4.0.1",
-    "tsc-watch": "4.2.6"
+    "tsc-watch": "4.2.7"
   },
   "engines": {
     "node": ">=10"
