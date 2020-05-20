@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/packages/constants-misc/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/constants-regexp/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/constants-validation/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/forms/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/localization-emailer/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/localization-ui/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/markdown/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-button-with-icon/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-dialog-confirmation/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-dialog-form/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-inputs-core/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-inputs-file/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-inputs-recaptcha/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-page-header/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-progress/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-theme-provider/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/material-ui-toolbar/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/provider-localization/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/provider-settings/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/provider-user/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/react-hooks-timing/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/test-engine/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/types/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/utils-fetch/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/utils-history/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/utils-validation/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/services/admin_api/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/services/admin_ui/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/services/player/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/services/public_api/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/services/public_ui/dist" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="runtime" level="application" />
+    <orderEntry type="library" name="runtime" level="application" />
+    <orderEntry type="library" name="runtime" level="application" />
+    <orderEntry type="library" name="runtime" level="application" />
+  </component>
+</module>

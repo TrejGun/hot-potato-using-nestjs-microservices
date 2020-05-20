@@ -1,0 +1,11 @@
+{
+  "coverageDirectory": "../coverage",
+  "clearMocks": true,
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "rootDir": "server",
+  "testEnvironment": "node",
+  "testRegex": "\\.(test|spec)\\.(j|t)sx?$",
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "author": {
+    "email": "TrejGun+OpenSource@gmail.com",
+    "name": "TrejGun"
+  },
+  "dependencies": {
+    "lerna": "3.21.0"
+  },
+  "devDependencies": {
+    "husky": "4.2.5",
+    "lint-staged": "10.2.4",
+    "prettier": "2.0.5"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT",
+  "name": "hot-potato-using-nestjs-microservices",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrejGun/hot-potato-using-nestjs-microservices"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "build": "lerna run build --stream",
+    "lint": "lerna run lint --stream --parallel",
+    "precommit": "lint-staged",
+    "prettier": "prettier \"services/**/*.{ts,tsx}\" --write",
+    "start": "lerna exec --parallel --scope @hot-potato-using-nestjs-microservices/api --scope @hot-potato-using-nestjs-microservices/player -- npm start"
+  },
+  "version": "0.0.1"
+}

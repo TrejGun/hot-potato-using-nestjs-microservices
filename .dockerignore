@@ -1,0 +1,10 @@
+node_modules
+dist
+.dockerignore
+.gitignore
+npm-debug.log
+lerna-debug.log
+report.*.json
+renovate.json
+
+# .env.*

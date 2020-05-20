@@ -20,13 +20,5 @@ yarn.lock
 /lerna-debug.log
 /report.*.json
 
-# env
-.env.development
-.env.test
-.env.production
-.env.staging
 
-# docker
-/docker-compose.production.yml
-/docker-compose.slim.yml
 
