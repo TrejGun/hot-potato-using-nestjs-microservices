@@ -59,7 +59,7 @@ services:
       context: ./services/player
       dockerfile: Dockerfile
     environment:
-      NODE_ENV: "production"
+      NODE_ENV: "development"
       PORT: 4003
       RMQ_URL: amqp://rabbitmq:5672
     depends_on:
