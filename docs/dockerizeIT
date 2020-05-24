@@ -1,0 +1,8 @@
+# Build and Start all in Docker
+docker-compose -f docker-compose_hp.yml up --build
+
+# Stop all in Docker
+docker-compose -f docker-compose_hp.yml down -v
+
+# Restart all in Docker
+docker-compose -f docker-compose_hp.yml up

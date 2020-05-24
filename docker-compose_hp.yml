@@ -1,0 +1,85 @@
+version: "3.6"
+
+services:
+
+  rabbitmq:
+    image: rabbitmq
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  hot-potato:
+    build:
+      context: .
+      target: development
+    image: hot-potato
+
+  api:
+    image: hot-potato:latest
+    working_dir: /services/api
+    command: ["npm", "run", "start"]
+    container_name: hot-potato-api
+    ports:
+      - '3001:3001'
+    volumes:
+      - './services/api/server:/services/api/server:delegated'
+    environment:
+      NODE_ENV: "development"
+      HOST: 0.0.0.0
+      PORT: 3001
+      RMQ_URL: amqp://rabbitmq:5672
+    depends_on:
+      - rabbitmq
+
+
+  player1:
+    image: hot-potato:latest
+    working_dir: /services/player
+    command: ["npm", "run", "start"]
+    container_name: hot-potato-player1
+    ports:
+      - '4001:4001'
+    volumes:
+      - './services/player/server:/services/player/server:delegated'
+    environment:
+      NODE_ENV: "development"
+      HOST: 0.0.0.0
+      PORT: 4001
+      RMQ_URL: amqp://rabbitmq:5672
+    depends_on:
+      - rabbitmq
+
+  player2:
+    image: hot-potato:latest
+    working_dir: /services/player
+    command: ["npm", "run", "start"]
+    container_name: hot-potato-player2
+    ports:
+      - '4002:4002'
+    volumes:
+      - './services/player/server:/services/player/server:delegated'
+    environment:
+      NODE_ENV: "development"
+      HOST: 0.0.0.0
+      PORT: 4002
+      RMQ_URL: amqp://rabbitmq:5672
+    depends_on:
+      - rabbitmq
+
+  player3:
+    image: hot-potato:latest
+    working_dir: /services/player
+    command: ["npm", "run", "start"]
+    container_name: hot-potato-player3
+    ports:
+      - '4003:4003'
+    volumes:
+      - './services/player/server:/services/player/server:delegated'
+    environment:
+      NODE_ENV: "development"
+      HOST: 0.0.0.0
+      PORT: 4003
+      RMQ_URL: amqp://rabbitmq:5672
+    depends_on:
+      - rabbitmq
