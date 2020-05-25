@@ -26,7 +26,8 @@
     "lint": "lerna run lint --stream --parallel",
     "precommit": "lint-staged",
     "prettier": "prettier \"services/**/*.{ts,tsx}\" --write",
-    "start": "lerna exec --parallel --scope @hot-potato-using-nestjs-microservices/api --scope @hot-potato-using-nestjs-microservices/player -- npm start"
+    "start": "lerna exec --parallel --scope @hot-potato-using-nestjs-microservices/api --scope @hot-potato-using-nestjs-microservices/player -- npm start",
+    "test": "lerna exec --parallel -- npm run test"
   },
   "version": "0.0.1"
 }
