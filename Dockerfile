@@ -13,8 +13,6 @@ RUN npm i --only=production
 FROM prereq as development
 
 COPY . /
-COPY /services/api/ts*.json services/api/server/
-COPY /services/player/ts*.json services/player/server/
 
 RUN npm run bootstrap
 
