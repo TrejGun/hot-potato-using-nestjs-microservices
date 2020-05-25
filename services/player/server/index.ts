@@ -9,7 +9,7 @@ async function bootstrap(): Promise<void> {
     transport: Transport.RMQ,
     options: {
       urls: [process.env.RMQ_URL],
-      queue: "potato",
+      queue: process.env.RMQ_QUEUE,
     },
   });
   await app

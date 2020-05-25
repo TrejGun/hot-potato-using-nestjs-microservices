@@ -12,17 +12,16 @@ export class PotatoService {
     transport: Transport.RMQ,
     options: {
       urls: [process.env.RMQ_URL],
-      queue: "potato",
+      queue: process.env.RMQ_QUEUE,
     },
   })
   client: ClientProxy;
 
   public play(): Promise<IMessage> {
-    return  this.client
+    return this.client
       .send("PLAY", {
         server: "API",
       })
       .toPromise();
   }
-
 }

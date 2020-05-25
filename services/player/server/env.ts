@@ -17,6 +17,7 @@ declare global {
       DEBUG: string;
 
       RMQ_URL: string;
+      RMQ_QUEUE: string;
 
       INSTANCE: string;
     }

@@ -29,6 +29,7 @@ services:
       HOST: 0.0.0.0
       PORT: 3001
       RMQ_URL: amqp://rabbitmq:5672
+      RMQ_QUEUE: potato
     depends_on:
       - rabbitmq
 
@@ -47,6 +48,7 @@ services:
       HOST: 0.0.0.0
       PORT: 4001
       RMQ_URL: amqp://rabbitmq:5672
+      RMQ_QUEUE: potato
       INSTANCE: palyer1
     depends_on:
       - rabbitmq
@@ -65,6 +67,7 @@ services:
       HOST: 0.0.0.0
       PORT: 4002
       RMQ_URL: amqp://rabbitmq:5672
+      RMQ_QUEUE: potato
       INSTANCE: palyer2
     depends_on:
       - rabbitmq
@@ -83,6 +86,7 @@ services:
       HOST: 0.0.0.0
       PORT: 4003
       RMQ_URL: amqp://rabbitmq:5672
+      RMQ_QUEUE: potato
       INSTANCE: palyer3
     depends_on:
       - rabbitmq
