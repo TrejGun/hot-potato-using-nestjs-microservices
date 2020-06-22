@@ -1,4 +1,4 @@
-# Encoder
+# Hot Potato
 
 Welcome to Hot Potato example.
 
