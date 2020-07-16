@@ -43,7 +43,7 @@
     "jest": "26.1.0",
     "ts-jest": "26.1.2",
     "tsc-watch": "4.2.9",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   },
   "license": "UNLICENSED",
   "main": "./dist/index.js",
