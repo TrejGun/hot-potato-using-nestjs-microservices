@@ -1,8 +1,15 @@
 {
   "extends": ["config:base"],
-  "automergeType": "pr",
-  "automerge": true,
-  "major": {
-    "automerge": false
-  }
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "updateTypes": ["major"],
+      "automerge": false
+    }
+  ],
+  "major": {"masterIssueApproval": true},
+  "requiredStatusChecks": null
 }
