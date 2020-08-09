@@ -9,8 +9,6 @@ import {AppModule} from "./app.module";
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.disable("x-powered-by");
-
   const options = new DocumentBuilder()
     .setTitle("Hot Potato API")
     .setDescription("API description")
@@ -24,4 +22,4 @@ async function bootstrap(): Promise<void> {
   });
 }
 
-bootstrap();
+void bootstrap();
