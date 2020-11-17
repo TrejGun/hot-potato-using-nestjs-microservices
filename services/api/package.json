@@ -7,10 +7,10 @@
     "url": "https://github.com/TrejGun/hot-potato-using-nestjs-microservices"
   },
   "dependencies": {
-    "@nestjs/common": "7.5.2",
-    "@nestjs/core": "7.5.2",
-    "@nestjs/microservices": "7.5.2",
-    "@nestjs/platform-express": "7.5.2",
+    "@nestjs/common": "7.5.3",
+    "@nestjs/core": "7.5.3",
+    "@nestjs/microservices": "7.5.3",
+    "@nestjs/platform-express": "7.5.3",
     "@nestjs/swagger": "4.7.4",
     "@nestjs/terminus": "7.0.1",
     "amqp-connection-manager": "3.2.1",
@@ -21,7 +21,7 @@
     "swagger-ui-express": "4.1.4"
   },
   "devDependencies": {
-    "@nestjs/testing": "7.5.2",
+    "@nestjs/testing": "7.5.3",
     "@trejgun/eslint-config": "0.0.12",
     "@types/express": "4.17.9",
     "@types/jest": "26.0.15",
