@@ -17,7 +17,7 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "reflect-metadata": "0.1.13",
-    "typescript": "4.1.5"
+    "typescript": "4.2.2"
   },
   "description": "microservice",
   "devDependencies": {
