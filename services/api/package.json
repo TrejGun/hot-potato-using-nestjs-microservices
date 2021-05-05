@@ -15,7 +15,7 @@
     "@nestjs/terminus": "7.1.2",
     "amqp-connection-manager": "3.2.2",
     "amqplib": "0.7.1",
-    "dotenv": "8.4.0",
+    "dotenv": "8.5.1",
     "express": "4.17.1",
     "reflect-metadata": "0.1.13",
     "swagger-ui-express": "4.1.6"
