@@ -18,10 +18,10 @@ async function bootstrap(): Promise<void> {
 
   await app
     .startAllMicroservicesAsync()
-    .then(() => console.info(`Email service is subscribed to ${process.env.RMQ_URL}`));
+    .then(() => console.info(`Player is subscribed to ${process.env.RMQ_URL}`));
 
   await app.listen(process.env.PORT, process.env.HOST, () => {
-    console.info(`Email service health check is running on http://${process.env.HOST}:${process.env.PORT}/health`);
+    console.info(`Player health check is running on http://${process.env.HOST}:${process.env.PORT}/health`);
   });
 }
 

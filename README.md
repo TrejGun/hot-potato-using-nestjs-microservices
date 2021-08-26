@@ -9,13 +9,11 @@ Currently there are 2 service API and Player
 
 ### Build and Start all in Docker
 ```sh
-docker-compose -f docker-compose.yml up --build
+docker-compose build
+docker-compose up
 ```
+
 ### Stop all in Docker
 ```sh
-docker-compose -f docker-compose.yml down -v
-```
-### Restart all in Docker
-```sh
-docker-compose -f docker-compose.yml up
+docker-compose down -v
 ```
