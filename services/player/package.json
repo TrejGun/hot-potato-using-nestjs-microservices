@@ -14,7 +14,7 @@
     "@nestjs/platform-express": "8.0.6",
     "@nestjs/terminus": "8.0.0",
     "amqplib": "0.8.0",
-    "amqp-connection-manager": "3.6.0",
+    "amqp-connection-manager": "3.3.0",
     "dotenv": "10.0.0",
     "express": "4.17.1",
     "reflect-metadata": "0.1.13",

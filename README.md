@@ -2,7 +2,7 @@
 
 Welcome to Hot Potato example.
 
-Currently there are 2 service API and Player
+Currently, there are 2 service API and Player
 
 
 # Docker
@@ -17,3 +17,7 @@ docker-compose up
 ```sh
 docker-compose down -v
 ```
+
+### How to play
+
+Navigate to http://127.0.0.1:3001/potato
