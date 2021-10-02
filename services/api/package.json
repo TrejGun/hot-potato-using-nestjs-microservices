@@ -14,7 +14,7 @@
     "@nestjs/platform-express": "8.0.9",
     "@nestjs/swagger": "5.1.0",
     "@nestjs/terminus": "8.0.1",
-    "amqp-connection-manager": "3.3.0",
+    "amqp-connection-manager": "3.7.0",
     "amqplib": "0.8.0",
     "dotenv": "10.0.0",
     "express": "4.17.1",
