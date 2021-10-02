@@ -4,7 +4,6 @@ import {NestExpressApplication} from "@nestjs/platform-express";
 
 import {ApplicationModule} from "./app.module";
 
-
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(ApplicationModule);
 
@@ -16,9 +15,7 @@ async function bootstrap(): Promise<void> {
     },
   });
 
-  await app
-    .startAllMicroservicesAsync()
-    .then(() => console.info(`Player is subscribed to ${process.env.RMQ_URL}`));
+  await app.startAllMicroservices().then(() => console.info(`Player is subscribed to ${process.env.RMQ_URL}`));
 
   await app.listen(process.env.PORT, process.env.HOST, () => {
     console.info(`Player health check is running on http://${process.env.HOST}:${process.env.PORT}/health`);
