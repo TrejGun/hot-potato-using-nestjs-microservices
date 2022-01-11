@@ -1,6 +1,5 @@
-import {Injectable} from "@nestjs/common";
-import {Client, ClientProxy, Transport} from "@nestjs/microservices";
-
+import { Injectable } from "@nestjs/common";
+import { Client, ClientProxy, Transport } from "@nestjs/microservices";
 
 export interface IPayload {
   server: string;
@@ -21,12 +20,12 @@ export class PotatoService {
   })
   client: ClientProxy;
 
-  public play(payload: IPayload): Promise<IMessage> {
+  public play(payload: IPayload): Promise<IMessage | undefined> {
     console.info(`Got message from server ${payload.server}`);
     const isSuccess = Math.random() > 0.1;
     if (isSuccess) {
       return this.client
-        .send("PLAY", {
+        .send<IMessage>("PLAY", {
           server: process.env.INSTANCE,
         })
         .toPromise();

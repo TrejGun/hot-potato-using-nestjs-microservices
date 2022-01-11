@@ -1,7 +1,7 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDirs": ["./src", "./test"]
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "exclude": ["node_module", "./dist"]
+  "extends": "./tsconfig.json"
 }

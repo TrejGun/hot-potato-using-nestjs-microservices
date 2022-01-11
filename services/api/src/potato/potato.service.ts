@@ -1,6 +1,5 @@
-import {Injectable} from "@nestjs/common";
-import {Client, ClientProxy, Transport} from "@nestjs/microservices";
-
+import { Injectable } from "@nestjs/common";
+import { Client, ClientProxy, Transport } from "@nestjs/microservices";
 
 export interface IMessage {
   server: string;
@@ -17,9 +16,9 @@ export class PotatoService {
   })
   client: ClientProxy;
 
-  public play(): Promise<IMessage> {
+  public play(): Promise<IMessage | undefined> {
     return this.client
-      .send("PLAY", {
+      .send<IMessage>("PLAY", {
         server: "API",
       })
       .toPromise();

@@ -1,9 +1,8 @@
-import {config} from "dotenv";
-
+import { config } from "dotenv";
 
 config({
   path: `.env.${process.env.NODE_ENV}`,
-  debug: (process.env.DEBUG as any) as boolean,
+  debug: process.env.DEBUG as any as boolean,
 });
 
 declare global {
@@ -17,6 +16,8 @@ declare global {
 
       RMQ_URL: string;
       RMQ_QUEUE: string;
+
+      INSTANCE: string;
     }
   }
 }

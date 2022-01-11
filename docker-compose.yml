@@ -23,7 +23,7 @@ services:
     ports:
       - '3001:3001'
     volumes:
-      - './services/api/server:/services/api/server:delegated'
+      - './services/api/src:/services/api/src:delegated'
     environment:
       NODE_ENV: "development"
       HOST: 0.0.0.0
@@ -42,7 +42,7 @@ services:
     ports:
       - '4001:4001'
     volumes:
-      - './services/player/server:/services/player/server:delegated'
+      - './services/player/src:/services/player/src:delegated'
     environment:
       NODE_ENV: "development"
       HOST: 0.0.0.0
@@ -61,7 +61,7 @@ services:
     ports:
       - '4002:4002'
     volumes:
-      - './services/player/server:/services/player/server:delegated'
+      - './services/player/src:/services/player/src:delegated'
     environment:
       NODE_ENV: "development"
       HOST: 0.0.0.0
@@ -80,7 +80,7 @@ services:
     ports:
       - '4003:4003'
     volumes:
-      - './services/player/server:/services/player/server:delegated'
+      - './services/player/src:/services/player/src:delegated'
     environment:
       NODE_ENV: "development"
       HOST: 0.0.0.0

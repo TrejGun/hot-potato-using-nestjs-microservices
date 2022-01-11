@@ -1,4 +1,4 @@
-import {Controller, Get} from "@nestjs/common";
+import { Controller, Get } from "@nestjs/common";
 import {
   HealthCheck,
   HealthCheckResult,
@@ -6,7 +6,7 @@ import {
   HealthIndicatorResult,
   MicroserviceHealthIndicator,
 } from "@nestjs/terminus";
-import {Transport} from "@nestjs/microservices";
+import { Transport } from "@nestjs/microservices";
 
 @Controller("health")
 export class HealthController {

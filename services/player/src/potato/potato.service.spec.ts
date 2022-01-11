@@ -1,6 +1,5 @@
-import {Test, TestingModule} from "@nestjs/testing";
-import {PotatoService} from "./potato.service";
-
+import { Test, TestingModule } from "@nestjs/testing";
+import { PotatoService } from "./potato.service";
 
 describe("UserService", () => {
   let service: PotatoService;
