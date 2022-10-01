@@ -13,7 +13,7 @@
     "@nestjs/microservices": "9.1.2",
     "@nestjs/platform-express": "9.1.2",
     "@nestjs/swagger": "6.1.2",
-    "@nestjs/terminus": "9.1.1",
+    "@nestjs/terminus": "9.1.2",
     "amqp-connection-manager": "4.1.7",
     "amqplib": "0.10.3",
     "dotenv": "16.0.3",
