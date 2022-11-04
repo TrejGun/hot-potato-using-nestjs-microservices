@@ -4,7 +4,7 @@
     "name": "TrejGun"
   },
   "dependencies": {
-    "lerna": "5.6.2"
+    "lerna": "6.0.1"
   },
   "devDependencies": {
     "husky": "4.3.8",
