@@ -7,7 +7,7 @@
     "url": "https://github.com/TrejGun/hot-potato-using-nestjs-microservices"
   },
   "dependencies": {
-    "@nestjs/axios": "1.0.0",
+    "@nestjs/axios": "1.0.1",
     "@nestjs/common": "9.2.1",
     "@nestjs/core": "9.2.1",
     "@nestjs/microservices": "9.2.1",
