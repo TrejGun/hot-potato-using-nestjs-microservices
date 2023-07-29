@@ -18,8 +18,7 @@
     "amqplib": "0.10.3",
     "dotenv": "16.3.1",
     "express": "4.18.2",
-    "reflect-metadata": "0.1.13",
-    "swagger-ui-express": "4.6.3"
+    "reflect-metadata": "0.1.13"
   },
   "devDependencies": {
     "@nestjs/testing": "10.1.2",
