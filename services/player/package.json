@@ -18,7 +18,7 @@
     "dotenv": "16.4.5",
     "express": "4.19.2",
     "reflect-metadata": "0.2.2",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "description": "microservice",
   "devDependencies": {
@@ -26,9 +26,9 @@
     "@nestjs/testing": "10.3.7",
     "@types/express": "4.17.21",
     "@types/jest": "29.5.12",
-    "@types/node": "20.11.30",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "@typescript-eslint/parser": "7.4.0",
+    "@types/node": "20.12.5",
+    "@typescript-eslint/eslint-plugin": "7.5.0",
+    "@typescript-eslint/parser": "7.5.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-standard": "17.1.0",
@@ -43,7 +43,7 @@
     "jest": "29.7.0",
     "ts-jest": "29.1.2",
     "tsc-watch": "6.2.0",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "engines": {
     "node": ">=14"
