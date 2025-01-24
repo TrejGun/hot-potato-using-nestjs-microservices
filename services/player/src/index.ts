@@ -27,7 +27,7 @@ async function bootstrap(): Promise<void> {
     { inheritAppConfig: true },
   );
 
-  await app.startAllMicroservices().then(() => console.info(`Player is subscribed to ${process.env.RMQ_URL}`));
+  await app.startAllMicroservices().then(() => console.info(`Player is subscribed to ${rmqUrl}`));
 
   const host = configService.get<string>("HOST", "localhost");
   const port = configService.get<number>("PORT", 3010);
