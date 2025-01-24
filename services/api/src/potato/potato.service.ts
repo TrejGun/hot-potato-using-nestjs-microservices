@@ -1,25 +1,23 @@
-import { Injectable } from "@nestjs/common";
-import { Client, ClientProxy, Transport } from "@nestjs/microservices";
+import { Inject, Injectable } from "@nestjs/common";
+import { ClientProxy } from "@nestjs/microservices";
+import { ConfigService } from "@nestjs/config";
 
-export interface IMessage {
-  server: string;
-}
+import type { IMessage } from "./potato.interface";
+import { MESSAGE_TYPE, POTATO_SERVICE } from "./potato.constants";
 
 @Injectable()
 export class PotatoService {
-  @Client({
-    transport: Transport.RMQ,
-    options: {
-      urls: [process.env.RMQ_URL],
-      queue: process.env.RMQ_QUEUE,
-    },
-  })
-  client: ClientProxy;
+  constructor(
+    @Inject(POTATO_SERVICE)
+    private readonly client: ClientProxy,
+    private readonly configService: ConfigService,
+  ) {}
 
   public play(): Promise<IMessage | undefined> {
+    const instance = this.configService.get("INSTANCE", "api");
     return this.client
-      .send<IMessage>("PLAY", {
-        server: "API",
+      .send<IMessage, IMessage>(MESSAGE_TYPE, {
+        instance,
       })
       .toPromise();
   }

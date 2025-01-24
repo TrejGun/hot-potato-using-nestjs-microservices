@@ -14,7 +14,7 @@
     "prettier": "3.4.2"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "license": "MIT",
   "name": "hot-potato-using-nestjs-microservices",

@@ -1,5 +1,6 @@
 import { Controller, Get } from "@nestjs/common";
-import { IMessage, PotatoService } from "./potato.service";
+import { PotatoService } from "./potato.service";
+import type { IMessage } from "./potato.interface";
 
 @Controller("potato")
 export class PotatoController {
