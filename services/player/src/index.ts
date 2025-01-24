@@ -29,8 +29,10 @@ async function bootstrap(): Promise<void> {
 
   await app.startAllMicroservices().then(() => console.info(`Player is subscribed to ${process.env.RMQ_URL}`));
 
-  await app.listen(process.env.PORT, process.env.HOST, () => {
-    console.info(`Player health check is running on http://${process.env.HOST}:${process.env.PORT}/health`);
+  const host = configService.get<string>("HOST", "localhost");
+  const port = configService.get<number>("PORT", 3010);
+  await app.listen(port, host, () => {
+    console.info(`Player health check is running on http://${host}:${port}/health`);
   });
 }
 
